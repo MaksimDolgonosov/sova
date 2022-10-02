@@ -86,37 +86,31 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/modules/script1.js":
-/*!***********************************!*\
-  !*** ./src/js/modules/script1.js ***!
-  \***********************************/
+/***/ "./src/js/modules/promo.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/promo.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-let script1 = () => {
-  console.log("script11111111111");
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (script1);
-
-/***/ }),
-
-/***/ "./src/js/modules/script2.js":
-/*!***********************************!*\
-  !*** ./src/js/modules/script2.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-let script2 = () => {
-  console.log("script2");
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (script2);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return promo; });
+function promo(promoURL) {// const promoItem = document.querySelector(promoURL);
+  // // promoItem.style.backgroundImage = "url('../img/interier/main1.jpg')";
+  // let urlArr = ["url('../img/interier/main1.jpg')", "url('../img/interier/main2.jpeg')"];
+  // let i = 0;
+  // changeUrl();
+  // function changeUrl() {
+  //     if (i == urlArr.length) {
+  //         i = 0;
+  //     } else {
+  //         promoItem.style.backgroundImage = urlArr[i];
+  //         i++;
+  //     }
+  // }
+  // setInterval(changeUrl, 3000);
+}
 
 /***/ }),
 
@@ -129,13 +123,9 @@ let script2 = () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_script1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/script1 */ "./src/js/modules/script1.js");
-/* harmony import */ var _modules_script2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/script2 */ "./src/js/modules/script2.js");
+/* harmony import */ var _modules_promo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/promo */ "./src/js/modules/promo.js");
 
-
-window.addEventListener("DOMContentLoaded", () => {
-  Object(_modules_script1__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_script2__WEBPACK_IMPORTED_MODULE_1__["default"])();
+window.addEventListener("DOMContentLoaded", () => {// promo(".promo");
 });
 
 /***/ })

@@ -1,0 +1,39 @@
+.promo {
+    width: 100%;
+    height: 100vh;
+    // background: url("../img/interier/main1.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    animation: showBackground 14s ease infinite alternate;
+
+    .icon-scroll {
+        width: 20px;
+        height: 35px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: inset 0 0 0 2px #fff;
+        border-radius: 25px;
+        z-index: 99;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            margin-left: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            top: 5px;
+            border-radius: 100%;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+        }
+    }
+}

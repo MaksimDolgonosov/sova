@@ -1,10 +1,10 @@
 
-import script1 from "./modules/script1";
-import script2 from "./modules/script2";
+import promo from "./modules/promo";
+
 
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    script1();
-    script2();
+    // promo(".promo");
+
 });
