@@ -3,19 +3,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Marmelad', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 
 .container {
-    
+    width: 1140px;
 }
 
 @import 'blocks/keyframes';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/media';
+@import 'blocks/description';
