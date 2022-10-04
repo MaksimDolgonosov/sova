@@ -18,6 +18,25 @@
     }
 }
 
+@keyframes showBackgroundMobile {
+    0% {
+        background-image: url("../img/food/6.jpg");
+
+    }
+
+    33% {
+        background-image: url("../img/food/6.jpg");
+
+    }
+    66% {
+        background-image: url("../img/food/5.jpg");
+    }
+
+    100% {
+        background-image: url("../img/food/5.jpg");
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translateY(0px);
