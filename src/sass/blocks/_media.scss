@@ -17,9 +17,20 @@
 
             &-item {
                 a {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
+            }
+        }
+    }
+    .promo {
+        &__goodMorning {
+            width: 80%;
+            &-hello {
+                font-size: 30px;
+            }
+            &-text {
+                font-size: 24px;
             }
         }
     }
@@ -48,11 +59,12 @@
         animation: showBackgroundMobile 18s ease infinite alternate;
         &__goodMorning {
             width: 80%;
+            left: 40px;
             &-hello {
-                font-size: 24px;
+                font-size: 26px;
             }
             &-text {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }

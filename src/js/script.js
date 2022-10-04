@@ -1,10 +1,10 @@
 
-import promo from "./modules/promo";
+import hamburger from "./modules/hamburger";
 
 
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    // promo(".promo");
+    hamburger();
 
 });

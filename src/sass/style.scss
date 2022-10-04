@@ -81,7 +81,11 @@
     font-family: 'Core Sans', sans-serif;
     margin: 0;
     padding: 0;
-    
+
+}
+
+body {
+    position: relative
 }
 
 
@@ -95,5 +99,6 @@
 @import 'blocks/keyframes';
 @import 'blocks/promo';
 @import 'blocks/header';
+@import 'blocks/headerMobile';
 @import 'blocks/media';
 @import 'blocks/description';

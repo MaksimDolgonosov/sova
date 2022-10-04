@@ -86,30 +86,32 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/modules/promo.js":
-/*!*********************************!*\
-  !*** ./src/js/modules/promo.js ***!
-  \*********************************/
+/***/ "./src/js/modules/hamburger.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/hamburger.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return promo; });
-function promo(promoURL) {// const promoItem = document.querySelector(promoURL);
-  // // promoItem.style.backgroundImage = "url('../img/interier/main1.jpg')";
-  // let urlArr = ["url('../img/interier/main1.jpg')", "url('../img/interier/main2.jpeg')"];
-  // let i = 0;
-  // changeUrl();
-  // function changeUrl() {
-  //     if (i == urlArr.length) {
-  //         i = 0;
-  //     } else {
-  //         promoItem.style.backgroundImage = urlArr[i];
-  //         i++;
-  //     }
-  // }
-  // setInterval(changeUrl, 3000);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return hamburger; });
+function hamburger() {
+  const hamburger = document.querySelector(".header__hamburger");
+  const menu = document.querySelector(".header__items__mobile");
+  hamburger.addEventListener("click", () => {
+    if (hamburger.classList.contains("header__hamburger")) {
+      hamburger.classList.remove("header__hamburger");
+      hamburger.classList.add("header__hamburger-active");
+      menu.classList.remove("header__items__mobile");
+      menu.classList.add("header__items__mobile-active");
+    } else {
+      hamburger.classList.remove("header__hamburger-active");
+      hamburger.classList.add("header__hamburger");
+      menu.classList.remove("header__items__mobile-active");
+      menu.classList.add("header__items__mobile");
+    }
+  });
 }
 
 /***/ }),
@@ -123,9 +125,10 @@ function promo(promoURL) {// const promoItem = document.querySelector(promoURL);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_promo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/promo */ "./src/js/modules/promo.js");
+/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
 
-window.addEventListener("DOMContentLoaded", () => {// promo(".promo");
+window.addEventListener("DOMContentLoaded", () => {
+  Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 
 /***/ })
