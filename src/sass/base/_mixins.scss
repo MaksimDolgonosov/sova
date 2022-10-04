@@ -1,0 +1,7 @@
+@mixin green-line {
+    width: 1000px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: $green_color;
+    margin: 30px auto;
+}

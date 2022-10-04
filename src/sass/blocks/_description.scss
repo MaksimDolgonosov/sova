@@ -1,12 +1,62 @@
 .description {
-    height: 400px;
+    min-height: 400px;
     background: url('../img/interier/concrete3.jpg') no-repeat 100%/cover;
     box-shadow: 0px 23px 20px 25px rgba(239, 240, 185, 0.2) inset;
+    padding-bottom: 35px;
+
     h2 {
-        color:rgb(0, 0, 0);
+        color: rgb(25, 34, 28);
+        text-shadow: 0 2px 2px $green_color, 2px 0 2px $green_color;
         text-align: center;
         padding-top: 40px;
         font-size: 40px;
         font-weight: 600;
+    }
+
+    &__line {
+        @include green-line;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    &__img {
+        width: 450px;
+        height: 600px;
+        padding-right: 10px;
+        box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__about {
+        width: 530px;
+        height: 250px;
+        background-color: $green_color2;
+        background: linear-gradient(90deg, rgba(62, 87, 17, 1) 0%, rgba(51, 68, 22, 1) 35%, rgba(27, 36, 12, 1) 100%);
+        padding: 20px;
+        z-index: 6;
+        position: absolute;
+        right: 0;
+        top: 250px;
+
+        &-title {
+            color: azure;
+            font-size: 24px;
+        }
+
+        &-text {
+            color: azure;
+            font-size: 18px;
+        }
     }
 }
