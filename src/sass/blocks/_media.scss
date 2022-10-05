@@ -1,6 +1,45 @@
-@media(max-height: 1366px) {}
+@media(max-height: 1366px) {
+    .container {
+        max-width: 1140px;
 
-@media(max-width: 1200px) {}
+        .description {
+            &__about {
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .promo {
+        &__goodMorning {
+            width: 80%;
+
+            &-hello {
+                font-size: 28px;
+            }
+
+            &-text {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .container {
+        max-width: 960px;
+
+        .description {
+            &__about {
+                width: 400px;
+                min-height: 300px;
+                right: -50px;
+            }
+        }
+
+    }
+
+
+}
 
 @media(max-width: 992px) {
     .header {
@@ -23,17 +62,39 @@
             }
         }
     }
+
     .promo {
         &__goodMorning {
             width: 80%;
+
             &-hello {
-                font-size: 30px;
-            }
-            &-text {
                 font-size: 24px;
+            }
+
+            &-text {
+                font-size: 18px;
             }
         }
     }
+
+    .container {
+        max-width: 720px;
+
+        .description {
+            &__about {
+                position: static;
+                top: auto;
+                right: inherit;
+                margin-top: 10px;
+                width: 100%;
+                min-height: 150px;
+
+            }
+        }
+
+    }
+
+
 }
 
 @media(max-width: 768px) {
@@ -55,21 +116,51 @@
             visibility: visible;
         }
     }
+
     .promo {
         animation: showBackgroundMobile 18s ease infinite alternate;
+
         &__goodMorning {
             width: 80%;
             left: 40px;
+
             &-hello {
                 font-size: 26px;
             }
+
             &-text {
                 font-size: 18px;
             }
         }
     }
+
+    .container {
+        max-width: 540px;
+
+        .description {
+            &__title {
+                font-size: 32px;
+            }
+
+            &__wrapper {
+                justify-content: space-between;
+                padding-top: 25px;
+            }
+
+            &__img {
+                width: 270px;
+                height: 400px;
+                padding-right: 0;
+            }
+        }
+    }
 }
 
-@media(max-width: 576px) {}
+@media(max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
 
 @media(max-width: 429px) {}

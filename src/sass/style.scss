@@ -81,19 +81,34 @@
     font-family: 'Core Sans', sans-serif;
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
     position: relative
 }
 
-
 .container {
     width: 1240px;
     margin: 0 auto;
     position: relative
 }
+
+.header__items-item {
+    a.header_active {
+        color: $green_color;
+        text-shadow: -1px 1px 1px azure, 1px -1px 1px azure, -1px -1px 1px azure, 1px 1px 1px azure;
+    }
+}
+.header__items__mobile-item {
+    a.header_active {
+        color: $green_color;
+        text-shadow: -1px 1px 1px azure, 1px -1px 1px azure, -1px -1px 1px azure, 1px 1px 1px azure;
+    }
+}
+
+
+
 
 
 @import 'blocks/keyframes';
