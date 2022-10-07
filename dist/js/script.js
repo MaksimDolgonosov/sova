@@ -144,8 +144,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  let rellax = new Rellax('.rellax');
   Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 993) {
+      rellax.destroy();
+    } else {
+      rellax.refresh();
+    }
+  });
 });
 
 /***/ })

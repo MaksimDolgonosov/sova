@@ -3,16 +3,13 @@
     min-height: 400px;
     background: url('../img/interier/concrete3.jpg') no-repeat 100%/cover;
     box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
+    // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
     padding-bottom: 55px;
+    background-attachment: fixed;
 
 
     &__title {
-        color: rgb(25, 34, 28);
-        text-shadow: 0 2px 2px $green_color, 2px 0 2px $green_color;
-        text-align: center;
-        padding-top: 40px;
-        font-size: 40px;
-        font-weight: 600;
+        @include title
     }
 
     &__line {
@@ -55,7 +52,7 @@
         position: absolute;
 
         right: 0px;
-        top: 650px;
+        top: 700px;
 
 
 

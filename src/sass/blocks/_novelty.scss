@@ -1,0 +1,46 @@
+.novelty {
+    &__pre {
+        background: url("../img/food/novelty_background2B.jpg") no-repeat 100%/cover;
+
+        height: 300px;
+        background-attachment: fixed;
+    }
+
+    ;
+
+    &__post {
+        position: relative;
+        min-height: 400px;
+        background: url('../img/interier/concrete3.jpg') no-repeat 100%/cover;
+        box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
+        // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
+        padding-bottom: 55px;
+        background-attachment: fixed;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__line {
+        @include green-line;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
+    }
+
+    &__img {
+        &:nth-child(1) {
+            height: 600px;
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
+        }
+        &:nth-child(2) {
+            width: 500px;
+            margin-left: 10px;
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
+        }
+    }
+}

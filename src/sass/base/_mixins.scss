@@ -6,3 +6,12 @@
     margin: 30px auto;
 }
 
+@mixin title {
+    color: rgb(25, 34, 28);
+    text-shadow: 0 2px 2px $green_color, 2px 0 2px $green_color;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
