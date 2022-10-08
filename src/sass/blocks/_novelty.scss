@@ -1,6 +1,7 @@
 .novelty {
+    position: relative;
     &__pre {
-        background: url("../img/food/novelty_background2B.jpg") no-repeat 100%/cover;
+        background: url("../img/food/novelty_background1.jpg") no-repeat 100%/cover;
 
         height: 300px;
         background-attachment: fixed;
@@ -41,6 +42,36 @@
             width: 500px;
             margin-left: 10px;
             box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
+        }
+    }
+    &__menu {
+        width: 400px;
+        min-height: 250px;
+        background-color:rgb(249, 252, 252);
+        // background: linear-gradient(90deg, rgb(243, 243, 243) 0%, rgb(228, 229, 226) 35%, rgb(203, 204, 200) 100%);
+        padding: 20px;
+        z-index: 6;
+        position: absolute;
+        left: 70px;
+        top: 1500px;
+        border: 2px solid rgb(163, 255, 25);
+        &-title {
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-end;
+            font-size: 14px;
+            &-title {
+                width: 90%;
+            }
+            &-price {
+                width: 10%;
+                text-align: right;
+            }
         }
     }
 }
