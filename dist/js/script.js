@@ -116,17 +116,29 @@ function hamburger() {
 
 /***/ }),
 
-/***/ "./src/js/modules/scrolling.js":
-/*!*************************************!*\
-  !*** ./src/js/modules/scrolling.js ***!
-  \*************************************/
+/***/ "./src/js/modules/zoomIn.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/zoomIn.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scrolling; });
-function scrolling() {}
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return zoomIn; });
+function zoomIn() {
+  const icons = document.querySelectorAll(".promo__icon");
+  showIcons(icons[0], 2000);
+  showIcons(icons[1], 2500);
+  showIcons(icons[2], 3000);
+
+  function showIcons(icon, time) {
+    setTimeout(() => {
+      icon.classList.add("animate__bounceInUp");
+      icon.style.opacity = "1";
+    }, time);
+  }
+}
 
 /***/ }),
 
@@ -140,13 +152,14 @@ function scrolling() {}
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
-/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
+/* harmony import */ var _modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/zoomIn */ "./src/js/modules/zoomIn.js");
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  new WOW().init();
   let rellax = new Rellax('.rellax');
   Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__["default"])();
   window.addEventListener("resize", () => {
     if (window.innerWidth < 993) {
       rellax.destroy();

@@ -1,7 +1,7 @@
 .description {
     position: relative;
     min-height: 400px;
-    background: url('../img/interier/concrete3.jpg') no-repeat 100%/cover;
+    background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
     box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
     // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
     padding-bottom: 55px;
@@ -59,11 +59,13 @@
         &-title {
             color: azure;
             font-size: 24px;
+            font-weight: 300;
         }
 
         &-text {
             color: azure;
             font-size: 18px;
+            font-weight: 300;
         }
     }
 }

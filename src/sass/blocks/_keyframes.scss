@@ -10,11 +10,11 @@
     }
 
     66% {
-        background-image: url("../img/food/1.jpg");
+        background-image: url("../img/interier/main2Cut.jpg");
     }
 
     100% {
-        background-image: url("../img/food/1.jpg");
+        background-image: url("../img/interier/main2Cut.jpg");
     }
 }
 
@@ -28,6 +28,7 @@
         background-image: url("../img/food/6.jpg");
 
     }
+
     66% {
         background-image: url("../img/food/5.jpg");
     }
@@ -51,5 +52,20 @@
     100% {
         transform: translateY(20px);
         opacity: 0.2;
+    }
+}
+
+@keyframes new {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

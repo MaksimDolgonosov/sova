@@ -11,6 +11,20 @@
     animation: showBackground 18s ease infinite alternate;
     box-shadow: 0px 10px 15px rgba(239, 240, 185, 0.9);
 
+    &__icons {
+        position: absolute;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 20px;
+        right: 20px;
+    }
+    &__icon {
+        width: 30%;
+        opacity: 0;
+        transition: 2s all;
+    }
 
     .icon-scroll {
         width: 20px;

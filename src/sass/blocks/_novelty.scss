@@ -1,7 +1,8 @@
 .novelty {
     position: relative;
+
     &__pre {
-        background: url("../img/food/novelty_background1.jpg") no-repeat 100%/cover;
+        background: url("../img/food/novelty_background1L.jpg") no-repeat 100%/cover;
 
         height: 300px;
         background-attachment: fixed;
@@ -12,7 +13,7 @@
     &__post {
         position: relative;
         min-height: 400px;
-        background: url('../img/interier/concrete3.jpg') no-repeat 100%/cover;
+        background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
         box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
         // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
         padding-bottom: 55px;
@@ -38,36 +39,54 @@
             height: 600px;
             box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
         }
+
         &:nth-child(2) {
             width: 500px;
             margin-left: 10px;
             box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
         }
     }
+
     &__menu {
         width: 400px;
         min-height: 250px;
-        background-color:rgb(249, 252, 252);
+        background-color: rgb(249, 252, 252);
+        box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2);
         // background: linear-gradient(90deg, rgb(243, 243, 243) 0%, rgb(228, 229, 226) 35%, rgb(203, 204, 200) 100%);
         padding: 20px;
         z-index: 6;
         position: absolute;
         left: 70px;
-        top: 1500px;
-        border: 2px solid rgb(163, 255, 25);
+        top: 1400px;
+        border: 2px solid rgb(122, 202, 1);
+
         &-title {
             font-size: 24px;
             text-align: center;
             padding-bottom: 10px;
         }
-        &-item{
+
+        &-new {
+            width: 13%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            animation-name: new;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        &-item {
             display: flex;
             justify-content: space-between;
-            align-items:flex-end;
+            align-items: flex-end;
             font-size: 14px;
+            padding-bottom: 5px;
+
             &-title {
                 width: 90%;
             }
+
             &-price {
                 width: 10%;
                 text-align: right;

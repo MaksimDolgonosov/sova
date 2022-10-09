@@ -1,14 +1,14 @@
 
 import hamburger from "./modules/hamburger";
-import scrolling from "./modules/scrolling";
+import zoomIn from "./modules/zoomIn";
 
 
 
 window.addEventListener("DOMContentLoaded", () => {
-
+    new WOW().init();
     let rellax = new Rellax('.rellax');
     hamburger();
-    scrolling();
+    zoomIn();
 
 
 
