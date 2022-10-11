@@ -34,12 +34,12 @@
 
     &__img {
         &:nth-child(1) {
-            height: 600px;
+            height: 550px;
             box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
         }
 
         &:nth-child(2) {
-            width: 500px;
+            width: 550px;
             margin-left: 10px;
             box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 3px rgba(239, 240, 185, 0.2);
         }
@@ -49,13 +49,13 @@
         width: 400px;
         min-height: 250px;
         background-color: rgb(249, 252, 252);
-        box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2), ;
+        box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2) ;
         // background: linear-gradient(90deg, rgb(243, 243, 243) 0%, rgb(228, 229, 226) 35%, rgb(203, 204, 200) 100%);
         padding: 20px;
         z-index: 6;
         position: absolute;
         left: 70px;
-        top: 1100px;
+        top: 1000px;
         border: 2px solid rgb(122, 202, 1);
 
         &-title {
