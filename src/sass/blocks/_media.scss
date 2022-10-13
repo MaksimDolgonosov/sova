@@ -9,6 +9,12 @@
         }
     }
 
+    .promotion {
+        &__item {
+            width: 70%;
+        }
+    }
+
 }
 
 @media(max-width: 1200px) {
@@ -134,6 +140,11 @@
 
     }
 
+    .promotion {
+        &__item {
+            width: 80%;
+        }
+    }
 
 }
 
@@ -182,6 +193,7 @@
 
     .description {
         background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
+
         // box-shadow: none;
         // background-attachment: none;
         &__title {
@@ -210,6 +222,56 @@
             background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
             box-shadow: none;
             // background-attachment: none;
+        }
+    }
+
+    .promotion {
+
+        &__post {
+            background: url('../img/interier/concrete-mob.jpg') no-repeat 100%/cover;
+        }
+
+
+        &__title {
+            font-size: 26px;
+            padding-top: 20px;
+        }
+
+        &__item {
+            width: 90%;
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-descr {
+                font-size: 17px;
+            }
+        }
+
+        &__explanation {
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        &-contacts {
+            width: 40%;
+
+            &-item {
+                &-descr {
+                    font-size: 14px;
+                }
+
+            }
+
+
+        }
+
+        &__powered {
+            font-size: 12px;
+            width: 26%;
+
         }
     }
 
@@ -273,6 +335,82 @@
             &:nth-child(2) {
                 display: none;
             }
+        }
+    }
+
+    .promotion {
+        &__pre {
+            background-attachment: scroll;
+            height: 80px;
+        }
+        &__post {
+            padding-bottom: 250px;
+        }
+
+        &__title {
+            font-size: 26px;
+            padding-top: 20px;
+        }
+
+        &__item {
+            width: 100%;
+
+            &-title {
+                font-size: 18px;
+            }
+
+            &-descr {
+                font-size: 15px;
+            }
+
+            &-wrapper {
+                width: 80%;
+            }
+
+            &-logo {
+                width: 20%;
+            }
+        }
+
+        &__explanation {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 230px;
+
+        margin-top: -230px;
+
+        &-logo {
+            width: 90%;
+            padding-bottom: 15px;
+        }
+
+        &-contacts {
+            width: 100%;
+            padding-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+
+            &-item {
+                justify-content: center;
+                &-descr {
+                    font-size: 14px;
+                }
+
+            }
+
+
+        }
+
+        &__powered {
+            font-size: 12px;
+            width: 90%;
+            // padding-bottom: 15px;
+            padding-right: 15px;
         }
     }
 }
