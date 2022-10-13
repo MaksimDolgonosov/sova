@@ -134,8 +134,10 @@ function zoomIn() {
 
   function showIcons(icon, time) {
     setTimeout(() => {
-      icon.classList.add("animate__bounceInUp");
-      icon.style.opacity = "1";
+      try {
+        icon.classList.add("animate__bounceInUp");
+        icon.style.opacity = "1";
+      } catch (e) {}
     }, time);
   }
 }
@@ -161,11 +163,13 @@ window.addEventListener("DOMContentLoaded", () => {
   Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__["default"])();
   window.addEventListener("resize", () => {
-    if (window.innerWidth < 993) {
-      rellax.destroy();
-    } else {
-      rellax.refresh();
-    }
+    try {
+      if (window.innerWidth < 993) {
+        rellax.destroy();
+      } else {
+        rellax.refresh();
+      }
+    } catch (e) {}
   });
 });
 

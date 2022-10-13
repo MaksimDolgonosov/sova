@@ -1,0 +1,58 @@
+.menu {
+    padding-top: 60px;
+    min-height: 400px;
+    background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
+    box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+
+    &__title {
+        @include title
+    }
+
+    &__greenLine {
+        @include green-line
+    }
+
+    &__container {
+        background-color: rgb(249, 252, 252);
+
+        &-title {
+            font-size: 26px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    &__items-1 {
+        border: 3px solid rgb(130, 214, 3);
+        width: 95%;
+        margin-right: 0;
+        margin-left: auto;
+        // display: inline;
+        // text-align: right;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 25px;
+
+        &-price {
+            font-weight: 500;
+            width: 5%;
+        }
+
+        &-descr {
+            font-size: 16px;
+            font-weight: 500;
+            width: 85%;
+        }
+
+        &-new {
+            width: 10%;
+        }
+    }
+
+}

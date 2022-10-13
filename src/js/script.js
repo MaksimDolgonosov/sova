@@ -13,11 +13,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     window.addEventListener("resize", () => {
-        if (window.innerWidth < 993) {
-            rellax.destroy();
-        } else {
-            rellax.refresh();
-        }
+        try {
+            if (window.innerWidth < 993) {
+                rellax.destroy();
+            } else {
+                rellax.refresh();
+            }
+        } catch (e) { }
+
     });
 
 });
