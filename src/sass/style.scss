@@ -109,6 +109,46 @@ body {
     }
 }
 
+.glutenFree {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -35px;
+        // transform: translateX(-35px);
+        width: 24px;
+        height: 24px;
+        background: url("../icons/gluten-free.png") no-repeat 100%/cover;
+    }
+}
+.vegan {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -35px;
+        // transform: translateX(-35px);
+        width: 24px;
+        height: 24px;
+        background: url("../icons/vegan.png") no-repeat 100%/cover;
+    }
+}
+
+.sugarFree {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -65px;
+        // transform: translateX(-35px);
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgb(73, 64, 64);
+        border-radius: 100%;
+        background: url("../icons/no-sugar.png") no-repeat 100%/cover;
+    }
+}
+
 
 
 
