@@ -214,6 +214,10 @@
             }
         }
 
+        &__nuts {
+            right: 40px;
+        }
+
     }
 
     .glutenFree {
@@ -454,6 +458,23 @@
             }
         }
 
+        &__nuts {
+            margin: 20px auto 0px auto;
+            padding: 10px;
+            position: static;
+
+            width: 70%;
+            height: 70px;
+            border: 3px solid rgb(190, 4, 4);
+            border-radius: 7px;
+            transform: rotateZ(0deg);
+            text-align: center;
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 500;
+
+        }
+
     }
 
     .glutenFree {
@@ -487,6 +508,8 @@
 
         }
     }
+
+
 
 }
 
@@ -631,9 +654,11 @@
 
     .menu {
         padding-bottom: 260px;
+
         &__container {
             border-radius: 3px;
-            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2) ;
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2);
+
             &-title {
 
                 font-weight: 500;
@@ -726,7 +751,7 @@
 
     .glutenFree {
         &::before {
-            top: 0;
+            top: 2px;
             // transform: translateX(-50%);
             left: -15px;
             width: 10px;
@@ -737,7 +762,7 @@
 
     .vegan {
         &::before {
-            top: 0;
+            top: 2px;
             // transform: translateX(-50%);
             left: -15px;
             width: 10px;
@@ -748,7 +773,7 @@
 
     .sugarFree {
         &::after {
-            top: 0;
+            top: 2px;
             left: -27px;
             width: 10px;
             height: 10px;
