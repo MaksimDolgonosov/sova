@@ -23,7 +23,7 @@
         padding-bottom: 40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr repeat(2, 1fr);
+        grid-template-rows: 1fr 0.3fr 0.5fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
@@ -36,7 +36,7 @@
     }
 
     &__items-coffee {
-        grid-area: 1 / 1 / 4 / 2;
+        grid-area: 1 / 1 / 4 / 2;;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
@@ -47,15 +47,48 @@
 
         &-title {
             font-size: 30px;
+        }
+    }
+
+    &__item-coffee {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        line-height: 21px;
+
+        &-price {
+            font-size: 16px;
+            font-weight: 500;
+            width: 10%;
+            text-align: right;
+        }
+
+        &-descr {
+            font-size: 14px;
+            font-weight: 500;
+            width: 85%;
+            padding-left: 10px;
+        }
+
+        &-new {
+            
+            animation-name: new;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            img {
+                               
+                width: 25px;
+            }
         }
     }
 
     &__items-tea {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: 1 / 2 / 2 / 3;;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
-        border-bottom: 3px solid rgb(130, 214, 3);
         width: 100%;
         margin-right: 0;
         margin-left: auto;
@@ -65,27 +98,104 @@
         }
     }
 
-    &__items-tea-smoothies {
+    &__item-tea {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        line-height: 25px;
+
+        &-price {
+            font-size: 16px;
+            font-weight: 500;
+            width: 10%;
+            text-align: right;
+        }
+
+        &-descr {
+            span {
+                font-size: 24px;
+            }
+
+            font-size: 14px;
+            font-weight: 500;
+            width: 85%;
+            padding-left: 10px;
+        }
+
+        &-new {
+            // width: 10%;
+            padding-left: 10px;
+            animation-name: new;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+
+    &__items-smoothies {
         grid-area: 2 / 2 / 3 / 3;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
-        border-bottom: 3px solid rgb(130, 214, 3);
+        border-left: 3px solid rgb(130, 214, 3);
         width: 100%;
-        margin-right: 0;
-        margin-left: auto;
+        // margin-right: 0;
+        // margin-left: auto;
 
         &-title {
             font-size: 30px;
         }
     }
 
-    &__items-tea-drinks {
-        grid-area: 3 / 2 / 4 / 3;
+    &__item-smoothies {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        line-height: 25px;
+
+        &-price {
+            font-size: 16px;
+            font-weight: 500;
+            width: 10%;
+            text-align: right;
+        }
+
+        &-descr {
+            span {
+                font-size: 24px;
+            }
+
+            font-size: 14px;
+            font-weight: 500;
+            width: 85%;
+            padding-left: 10px;
+        }
+
+        &-new {
+            // width: 10%;
+            padding-left: 10px;
+            animation-name: new;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    &__items-drinks {
+        grid-area: 3 / 2 / 4 / 3;;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
-        border-bottom: 3px solid rgb(130, 214, 3);
+        border-left: 3px solid rgb(130, 214, 3);
         width: 100%;
         margin-right: 0;
         margin-left: auto;
@@ -96,8 +206,7 @@
     }
 
 
-
-    &__item {
+    &__item-drinks {
         position: relative;
         display: flex;
         justify-content: left;
@@ -135,72 +244,40 @@
         }
     }
 
-    &__item-tea {
-        position: relative;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        line-height: 25px;
 
-        &-price {
-            font-size: 20px;
-            font-weight: 500;
-            width: 5%;
-            text-align: right;
-        }
 
-        &-descr {
-            span {
-                font-size: 20px;
-            }
 
-            font-size: 17px;
-            font-weight: 500;
-            // width: 85%;
-            padding-left: 10px;
-        }
 
-        &-new {
-            // width: 10%;
-            padding-left: 10px;
-            animation-name: new;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
 
-            img {
-                width: 25px;
-            }
-        }
-    }
 
-    &__item-post {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 10px;
+    // &__item-post {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     line-height: 10px;
 
-        &-price {
-            font-size: 15px;
-            font-weight: 400;
-            width: 5%;
-            text-align: right;
-        }
+    //     &-price {
+    //         font-size: 15px;
+    //         font-weight: 400;
+    //         width: 5%;
+    //         text-align: right;
+    //     }
 
-        &-descr {
-            font-size: 15px;
-            font-weight: 400;
-            width: 85%;
-            padding-left: 10px;
-        }
+    //     &-descr {
+    //         font-size: 15px;
+    //         font-weight: 400;
+    //         width: 85%;
+    //         padding-left: 10px;
+    //     }
 
-        &-new {
-            width: 10%;
+    //     &-new {
+    //         width: 10%;
 
-            img {
-                width: 25px;
-            }
-        }
-    }
+    //         img {
+    //             width: 25px;
+    //         }
+    //     }
+    // }
 
     &__greyLine {
         width: 100%;
