@@ -34,6 +34,7 @@
             text-align: center;
             line-height: 45px;
         }
+
     }
 
     &__items-coffee {
@@ -128,13 +129,14 @@
         &-title {
 
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
 
             &-name {
                 text-transform: uppercase;
                 padding-left: 10px;
                 font-size: 30px;
+                width: 15%;
             }
 
             &-descr {
@@ -144,6 +146,8 @@
             }
 
             &-size {
+                width: 55%;
+                text-align: end;
                 font-size: 22px;
             }
         }
