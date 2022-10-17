@@ -20,6 +20,7 @@
     &__container {
         position: relative;
         background-color: rgb(249, 252, 252);
+
         padding-bottom: 40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -36,7 +37,7 @@
     }
 
     &__items-coffee {
-        grid-area: 1 / 1 / 4 / 2;;
+        grid-area: 1 / 1 / 4 / 2;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
@@ -44,9 +45,12 @@
         width: 100%;
         margin-right: 0;
         margin-left: auto;
+        padding-top: 20px;
 
         &-title {
+            text-transform: uppercase;
             font-size: 30px;
+            padding-left: 10px;
         }
     }
 
@@ -55,83 +59,123 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        line-height: 21px;
+        line-height: 29px;
 
         &-price {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
             width: 10%;
             text-align: right;
         }
 
         &-descr {
-            font-size: 14px;
+            font-size: 20px;
             font-weight: 500;
-            width: 85%;
+            // width: 70%;
             padding-left: 10px;
         }
 
         &-new {
-            
+
             animation-name: new;
             animation-duration: 2s;
             animation-iteration-count: infinite;
+            padding-left: 10px;
 
             img {
-                               
+
                 width: 25px;
+            }
+        }
+
+        &-milk {
+            font-size: 16px;
+            color: red;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &-syrup {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 120px;
+            min-height: 70px;
+            background-color: rgb(235, 100, 10);
+            color: azure;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            padding: 10px;
+
+            span {
+                font-size: 22px;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 600;
             }
         }
     }
 
     &__items-tea {
-        grid-area: 1 / 2 / 2 / 3;;
+        grid-area: 1 / 2 / 2 / 3;
         padding-left: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
         width: 100%;
-        margin-right: 0;
-        margin-left: auto;
+        padding-right: 20px;
+        padding-top: 20px;
 
         &-title {
-            font-size: 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-name {
+                text-transform: uppercase;
+                padding-left: 10px;
+                font-size: 30px;
+            }
+
+            &-descr {
+                width: 30%;
+                font-size: 12px;
+                
+            }
+
+            &-size {
+                font-size: 22px;
+            }
         }
     }
 
     &__item-tea {
         position: relative;
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
-        line-height: 25px;
+        line-height: 29px;
+
+        &-descr {
+            font-size: 20px;
+            font-weight: 500;
+            width: 70%;
+            padding-left: 10px;
+        }
 
         &-price {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
-            width: 10%;
+            // width: 10%;
             text-align: right;
         }
 
-        &-descr {
-            span {
-                font-size: 24px;
-            }
+        &-post {
+            margin-top: -10px;
 
-            font-size: 14px;
-            font-weight: 500;
-            width: 85%;
-            padding-left: 10px;
-        }
-
-        &-new {
-            // width: 10%;
-            padding-left: 10px;
-            animation-name: new;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-
-            img {
-                width: 25px;
+            &-descr {
+                font-size: 15px;
+                padding-left: 10px;
             }
         }
     }
@@ -140,6 +184,7 @@
     &__items-smoothies {
         grid-area: 2 / 2 / 3 / 3;
         padding-left: 20px;
+        padding-right: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
         border-left: 3px solid rgb(130, 214, 3);
@@ -148,51 +193,73 @@
         // margin-left: auto;
 
         &-title {
+            padding-left: 10px;
             font-size: 30px;
+            text-transform: uppercase;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20px;
+            width: 35px;
+            height: 35px;
+            background: url("../icons/vegan.png")no-repeat 100%/cover;
         }
     }
 
     &__item-smoothies {
         position: relative;
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
-        line-height: 25px;
+        line-height: 29px;
+
+        &-descr {
+            font-size: 20px;
+            font-weight: 500;
+            // width: 70%;
+            padding-left: 10px;
+        }
 
         &-price {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
-            width: 10%;
+            // width: 10%;
             text-align: right;
         }
 
-        &-descr {
-            span {
-                font-size: 24px;
+        &-post {
+            margin-top: -10px;
+
+            &-descr {
+                font-size: 15px;
+                padding-left: 10px;
             }
-
-            font-size: 14px;
-            font-weight: 500;
-            width: 85%;
-            padding-left: 10px;
         }
-
-        &-new {
-            // width: 10%;
-            padding-left: 10px;
-            animation-name: new;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-
+        &-noSugar {
+            position: absolute;
+            right: 120px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
             img {
-                width: 25px;
+                border: 1px solid rgb(73, 64, 64);
+                border-radius: 100%;
+                width: 100%;
+                height: 100%;
+
             }
         }
+
+
     }
 
     &__items-drinks {
-        grid-area: 3 / 2 / 4 / 3;;
+        grid-area: 3 / 2 / 4 / 3;
         padding-left: 20px;
+        padding-right: 20px;
         position: relative;
         border-top: 3px solid rgb(130, 214, 3);
         border-left: 3px solid rgb(130, 214, 3);
@@ -201,6 +268,8 @@
         margin-left: auto;
 
         &-title {
+            text-transform: uppercase;
+            padding-left: 10px;
             font-size: 30px;
         }
     }
@@ -209,37 +278,30 @@
     &__item-drinks {
         position: relative;
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
-        line-height: 21px;
+        line-height: 29px;
+
+        &-descr {
+            font-size: 20px;
+            font-weight: 500;
+            // width: 70%;
+            padding-left: 10px;
+        }
 
         &-price {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
-            width: 5%;
+            // width: 10%;
             text-align: right;
         }
 
-        &-descr {
-            span {
-                font-size: 16px;
-            }
+        &-post {
+            margin-top: -10px;
 
-            font-size: 13px;
-            font-weight: 500;
-            // width: 85%;
-            padding-left: 10px;
-        }
-
-        &-new {
-            // width: 10%;
-            padding-left: 10px;
-            animation-name: new;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-
-            img {
-                width: 25px;
+            &-descr {
+                font-size: 15px;
+                padding-left: 10px;
             }
         }
     }
