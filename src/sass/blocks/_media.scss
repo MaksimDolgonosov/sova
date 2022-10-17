@@ -45,6 +45,11 @@
         }
     }
 
+    .delivery {
+        &__item {
+            width: 70%;
+        }
+    }
 
 
 
@@ -357,6 +362,11 @@
         }
     }
 
+    .delivery {
+        &__item {
+            width: 80%;
+        }
+    }
 }
 
 @media(max-width: 768px) {
@@ -674,6 +684,7 @@
                 padding-left: 0px;
             }
         }
+
         &__items-drinks {
             border-bottom: 3px solid rgb(130, 214, 3);
         }
@@ -718,11 +729,13 @@
                 width: 90%;
                 padding-left: 0px;
             }
+
             &-noSugar {
                 right: 10px;
             }
-    
+
         }
+
         &__items-smoothies {
             &::before {
                 content: "";
@@ -744,6 +757,34 @@
 
 
             }
+        }
+    }
+
+    .delivery {
+
+        background: url('../img/interier/concrete-mob.jpg') no-repeat 100%/cover;
+
+
+
+        &__title {
+            font-size: 26px;
+            padding-top: 20px;
+        }
+
+        &__item {
+            width: 90%;
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-descr {
+                font-size: 17px;
+            }
+        }
+
+        &__explanation {
+            font-size: 16px;
         }
     }
 
@@ -1014,6 +1055,42 @@
             width: 10px;
             height: 10px;
 
+        }
+    }
+
+    .delivery {
+        background: url('../img/interier/concrete-mob.jpg') no-repeat 100%/cover;
+        padding-bottom: 250px;
+
+
+        &__title {
+            font-size: 26px;
+            padding-top: 20px;
+        }
+
+        &__item {
+            width: 100%;
+
+            &-title {
+                font-size: 18px;
+            }
+
+            &-descr {
+                font-size: 15px;
+            }
+
+            &-wrapper {
+                width: 80%;
+            }
+
+            &-logo {
+                width: 20%;
+            }
+        }
+
+        &__explanation {
+            font-size: 16px;
+            font-weight: 500;
         }
     }
 }

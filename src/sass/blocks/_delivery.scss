@@ -1,0 +1,88 @@
+.delivery {
+    position: relative;
+    min-height: 500px;
+    background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
+    box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
+    // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 150px;
+
+    &__title {
+        @include title;
+    }
+
+    &__subtitle {
+        color: #deebeb;
+        text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: underline;
+        padding-bottom: 20px;
+    }
+
+
+    &__line {
+        @include green-line;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        width: 50%;
+        background-color: rgb(249, 252, 252);
+        box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2);
+        border: 2px solid rgb(122, 202, 1);
+        margin-bottom: 30px;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-wrapper {
+            width: 85%;
+        }
+
+        &-title {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &-descr {
+            font-weight: 400;
+            line-height: 22px;
+            span {
+                font-size: 16px;
+            }
+        }
+
+        &-logo {
+            padding: 5px;
+            width: 15%;
+            text-align: end;
+        }
+    }
+
+    &__explanation {
+        text-align: center;
+        color: rgb(250, 255, 255);
+        text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        font-weight: 500;
+        margin-top: 10px;
+        font-size: 20px;
+        a {
+            color: rgb(250, 255, 255);
+            text-decoration: none;
+        }
+    }
+}
