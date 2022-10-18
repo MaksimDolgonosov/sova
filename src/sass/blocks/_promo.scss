@@ -20,6 +20,7 @@
         bottom: 20px;
         right: 20px;
     }
+
     &__icon {
         width: 30%;
         opacity: 0;
@@ -82,6 +83,31 @@
                 line-height: 32px;
                 text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
             }
+        }
+
+    }
+
+    &__mode {
+        position: absolute;
+        left: 60px;
+        bottom: 20px;
+        z-index: 5;
+
+        &-hours {
+            font-weight: 400;
+            color: azure;
+            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        }
+
+        &-tel {
+            a {
+                font-weight: 500;
+                color: azure;
+                text-decoration: none;
+                text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+
+            }
+
         }
     }
 }

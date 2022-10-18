@@ -121,6 +121,7 @@ body {
         background: url("../icons/gluten-free.png") no-repeat 100%/cover;
     }
 }
+
 .vegan {
     &::before {
         content: "";
@@ -148,6 +149,12 @@ body {
     }
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
 
 
 
@@ -163,5 +170,6 @@ body {
 @import 'blocks/menu';
 @import 'blocks/drinks';
 @import 'blocks/delivery';
+@import 'blocks/about';
 
 @import 'blocks/media';

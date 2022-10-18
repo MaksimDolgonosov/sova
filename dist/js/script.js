@@ -86,6 +86,53 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/modules/aboutSlider.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/aboutSlider.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return aboutSlider; });
+function aboutSlider() {
+  const slides = document.querySelectorAll(".about__wrapper-slider-item");
+  let slideIndex = 0;
+  showSlide(slideIndex);
+  slides.forEach(slide => {
+    slide.classList.add("fade");
+  });
+
+  function showSlide(i) {
+    hideSlides();
+
+    try {
+      slides[i].style.display = "block";
+    } catch (e) {}
+  }
+
+  function hideSlides() {
+    slides.forEach(slide => {
+      slide.style.display = "none";
+    });
+  }
+
+  function nextSlide() {
+    if (slideIndex >= slides.length - 1) {
+      slideIndex = 0;
+    } else {
+      slideIndex++;
+    }
+
+    showSlide(slideIndex);
+  }
+
+  setInterval(nextSlide, 6000);
+}
+
+/***/ }),
+
 /***/ "./src/js/modules/hamburger.js":
 /*!*************************************!*\
   !*** ./src/js/modules/hamburger.js ***!
@@ -155,6 +202,8 @@ function zoomIn() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
 /* harmony import */ var _modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/zoomIn */ "./src/js/modules/zoomIn.js");
+/* harmony import */ var _modules_aboutSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/aboutSlider */ "./src/js/modules/aboutSlider.js");
+
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -162,6 +211,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let rellax = new Rellax('.rellax');
   Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_aboutSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
   window.addEventListener("resize", () => {
     try {
       if (window.innerWidth < 993) {

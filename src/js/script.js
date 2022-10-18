@@ -1,7 +1,7 @@
 
 import hamburger from "./modules/hamburger";
 import zoomIn from "./modules/zoomIn";
-
+import aboutSlider from "./modules/aboutSlider";
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let rellax = new Rellax('.rellax');
     hamburger();
     zoomIn();
+    aboutSlider();
 
 
 
