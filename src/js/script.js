@@ -2,6 +2,7 @@
 import hamburger from "./modules/hamburger";
 import zoomIn from "./modules/zoomIn";
 import aboutSlider from "./modules/aboutSlider";
+import reviewSlider from "./modules/reviewSlider";
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -10,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     hamburger();
     zoomIn();
     aboutSlider();
+    reviewSlider();
 
 
 
