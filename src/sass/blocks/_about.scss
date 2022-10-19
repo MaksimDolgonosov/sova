@@ -7,6 +7,7 @@
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 170px;
+    overflow-y: hidden;
 
     &__title {
         @include title;
@@ -54,6 +55,8 @@
         background-attachment: fixed;
         box-shadow: 0px 10px 8px 4px rgba(247, 248, 185, 0.3), 0px -10px 8px 4px rgba(247, 248, 185, 0.3);
         display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
 
         &-item {
@@ -61,25 +64,32 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 30%;
+            width: 45%;
+            transition: 1.5s all;
 
             &-descr {
+
                 color: azure;
-                font-size: 18px;
+                font-size: 16px;
+                font-weight: 300;
                 line-height: 22px;
             }
 
             &-photo {
+                margin-top: 10px;
                 width: 60px;
                 height: 60px;
 
                 img {
                     width: 100%;
                     height: 100%;
+                    border: 1px solid azure;
+                    border-radius: 100%;
                 }
             }
 
             &-name {
+                padding-top: 10px;
                 color: azure;
             }
         }
@@ -99,6 +109,7 @@
                 height: 10px;
                 border-radius: 100%;
                 border: 2px solid white;
+                cursor: pointer;
             }
         }
     }

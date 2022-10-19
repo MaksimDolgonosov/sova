@@ -4217,7 +4217,9 @@
 
  .animate__slideInRight {
      -webkit-animation-name: slideInRight;
-     animation-name: slideInRight
+     animation-name: slideInRight;
+     animation-duration: 1s;
+     
  }
 
  @-webkit-keyframes slideInUp {
