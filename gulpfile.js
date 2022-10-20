@@ -104,6 +104,34 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task("build-prod-js", () => {
+    return gulp.src("./src/js/script.js")
+        .pipe(webpack({
+            mode: 'production',
+            output: {
+                filename: 'script.js'
+            },
+            module: {
+                rules: [
+                    {
+                        test: /\.m?js$/,
+                        exclude: /(node_modules|bower_components)/,
+                        use: {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: [['@babel/preset-env', {
+                                    corejs: 3,
+                                    useBuiltIns: "usage"
+                                }]]
+                            }
+                        }
+                    }
+                ]
+            }
+        }))
+        .pipe(gulp.dest("dist/js"));
+});
+
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'build-js',
     // 'scripts', 
     'fonts', 'icons', 'html', 'images'));
