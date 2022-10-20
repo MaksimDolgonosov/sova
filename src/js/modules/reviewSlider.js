@@ -1,4 +1,5 @@
 export default function reviewSlider() {
+    const slidesWrapper = document.querySelector(".about__reviews");
     const slides = document.querySelectorAll(".about__reviews-item");
     const dots = document.querySelectorAll(".about__reviews-dots span");
     let slideIndex = 0;
@@ -10,9 +11,10 @@ export default function reviewSlider() {
             dots.forEach(item => {
                 item.style.backgroundColor = "transparent";
             });
-            dots[i].style.backgroundColor = "azure";
             slideIndex = i;
-            showSlide(i);
+            dots[slideIndex].style.backgroundColor = "azure";
+
+            showSlide(slideIndex);
         });
     });
 
@@ -26,6 +28,7 @@ export default function reviewSlider() {
         try {
             slides[i].classList.add("animate__slideInRight");
             slides[i].style.display = "flex";
+            dots[i].style.backgroundColor = "azure";
         } catch (e) { }
 
     }
@@ -34,6 +37,9 @@ export default function reviewSlider() {
         slides.forEach(slide => {
             slide.style.display = "none";
             slide.classList.remove("animate__slideInRight");
+        });
+        dots.forEach(item => {
+            item.style.backgroundColor = "transparent";
         });
     }
 
@@ -44,8 +50,19 @@ export default function reviewSlider() {
             slideIndex++;
         }
         showSlide(slideIndex);
+        dots[slideIndex].style.backgroundColor = "azure";
     }
 
-    // setInterval(nextSlide, 6000);
+    // setInterval(nextSlide, 5000);
 
+    let interval = setInterval(() =>nextSlide(), 5000);
+
+
+    slidesWrapper.addEventListener("mouseover", () => {
+        clearInterval(interval);
+    });
+
+    slidesWrapper.addEventListener("mouseout", () => {
+        interval = setInterval(() =>nextSlide(), 5000);
+    });
 }

@@ -4205,7 +4205,7 @@
  @keyframes slideInRight {
      0% {
          -webkit-transform: translate3d(100%, 0, 0);
-         transform: translate3d(100%, 0, 0);
+         transform: translate3d(60%, 0, 0);
          visibility: visible
      }
 
@@ -4219,7 +4219,7 @@
      -webkit-animation-name: slideInRight;
      animation-name: slideInRight;
      animation-duration: 1s;
-     
+
  }
 
  @-webkit-keyframes slideInUp {

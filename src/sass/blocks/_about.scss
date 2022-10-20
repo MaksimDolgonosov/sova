@@ -25,11 +25,17 @@
         &-descr {
             width: 45%;
             color: azure;
-            font-size: 22px;
+            font-size: 19px;
             font-weight: 500px;
-
-
             text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+
+            a {
+                display: inline;
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(0, 0, 0);
+                text-shadow: 3px 3px 20px rgba(247, 248, 185, 0.9), -3px -3px 20px rgba(247, 248, 185, 0.9), -3px 3px 20px rgba(247, 248, 185, 0.9), 3px -3px 20px rgba(247, 248, 185, 0.9);
+            }
         }
 
         &-slider {
