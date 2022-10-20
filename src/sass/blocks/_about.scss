@@ -7,7 +7,7 @@
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 170px;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
     &__title {
         @include title;
@@ -23,18 +23,28 @@
         align-items: flex-start;
 
         &-descr {
+
+
+            background-color: rgb(249, 252, 252);
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2);
+            background: linear-gradient(90deg, rgb(247, 246, 246) 0%, rgb(245, 245, 243) 35%, rgb(232, 233, 231) 100%);
+            text-shadow: none;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+
             width: 45%;
-            color: azure;
+            // color: azure;
             font-size: 19px;
             font-weight: 500px;
-            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+            // text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
 
             a {
                 display: inline;
                 font-size: 20px;
                 font-weight: 600;
                 color: rgb(0, 0, 0);
-                text-shadow: 3px 3px 20px rgba(247, 248, 185, 0.9), -3px -3px 20px rgba(247, 248, 185, 0.9), -3px 3px 20px rgba(247, 248, 185, 0.9), 3px -3px 20px rgba(247, 248, 185, 0.9);
+                // text-shadow: 3px 3px 20px rgba(247, 248, 185, 0.9), -3px -3px 20px rgba(247, 248, 185, 0.9), -3px 3px 20px rgba(247, 248, 185, 0.9), 3px -3px 20px rgba(247, 248, 185, 0.9);
             }
         }
 
@@ -42,11 +52,13 @@
             width: 45%;
 
             &-item {
+                border-radius: 5px;
                 width: 100%;
                 height: 100%;
                 box-shadow: -10px -10px 8px 4px rgba(247, 248, 185, 0.3), 10px 10px 8px 4px rgba(247, 248, 185, 0.3), -10px 10px 8px 4px rgba(247, 248, 185, 0.3), 10px -10px 8px 4px rgba(247, 248, 185, 0.3);
 
                 img {
+                    border-radius: 5px;
                     width: 100%;
                     height: 100%;
                 }
@@ -74,6 +86,8 @@
             transition: 1.5s all;
 
             &-descr {
+
+
 
                 color: azure;
                 font-size: 16px;

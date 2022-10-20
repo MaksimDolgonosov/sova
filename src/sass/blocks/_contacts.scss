@@ -1,0 +1,75 @@
+.contacts {
+    position: relative;
+    min-height: 700px;
+    background: url('../img/interier/concrete.jpg') no-repeat 100%/cover;
+    box-shadow: 0px 23px 20px 10px rgba(238, 240, 166, 0.10) inset;
+    // box-shadow: 0px 15px 6px 0px rgba(34, 60, 80, 0.2);
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 170px;
+    overflow-x: hidden;
+
+    &__title {
+        @include title;
+    }
+
+    &__line {
+        @include green-line;
+    }
+
+    &__descr {
+        color: rgb(222, 235, 235);
+        text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+    &__phone {
+        a {
+            display: block;
+            text-align: center;
+            color: rgb(222, 235, 235);
+            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+            text-decoration: none;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        &:hover {
+            text-decoration: none;
+        }
+        &-img {
+            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        }
+        &-descr {
+            padding-left: 10px;
+            color: rgb(222, 235, 235);
+            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9), -3px -3px 20px rgba(0, 0, 0, 0.9), -3px 3px 20px rgba(0, 0, 0, 0.9), 3px -3px 20px rgba(0, 0, 0, 0.9);
+        }
+        address {
+            margin: 0;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        padding-top: 20px;
+        height: 448px;
+        &-photo {
+            width: 45%;
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2);
+            img {
+                width: 100%;
+
+            }
+        }
+        &-map {
+            width: 45%;
+            height: 100%;
+            box-shadow: -10px -10px 8px 4px rgba(239, 240, 185, 0.2), 10px 10px 8px 4px rgba(239, 240, 185, 0.2);
+        }
+    }
+}
