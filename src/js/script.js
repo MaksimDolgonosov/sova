@@ -1,4 +1,4 @@
-
+import promo from "./modules/promo";
 import hamburger from "./modules/hamburger";
 import zoomIn from "./modules/zoomIn";
 import aboutSlider from "./modules/aboutSlider";
@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     zoomIn();
     aboutSlider();
     reviewSlider();
-
+    promo();
 
 
     window.addEventListener("resize", () => {

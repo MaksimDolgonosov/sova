@@ -8,7 +8,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
-    animation: showBackground 18s ease infinite alternate;
+    transition: 3s all;
+    // animation: showBackground 18s ease infinite alternate;
     box-shadow: 0px 10px 15px rgba(239, 240, 185, 0.9);
 
     &__icons {

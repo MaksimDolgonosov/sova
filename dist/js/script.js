@@ -163,6 +163,43 @@ function hamburger() {
 
 /***/ }),
 
+/***/ "./src/js/modules/promo.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/promo.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return promo; });
+function promo() {
+  const promoWrapper = document.querySelector(".promo");
+  const main = ["../img/interier/main1.jpg", "../img/interier/main2Cut.jpg"];
+  const mainMobile = ["../img/interier/cups.jpg", "../img/interier/main-mobile.jpg"];
+  let i = 0;
+
+  if (window.innerWidth < 769) {
+    promoWrapper.style.backgroundImage = "url(".concat(mainMobile[0], ")");
+    setInterval(() => changePromoWrapper(mainMobile), 14000);
+  } else {
+    promoWrapper.style.backgroundImage = "url(".concat(main[0], ")");
+    setInterval(() => changePromoWrapper(main), 12000);
+  }
+
+  function changePromoWrapper(selector) {
+    if (i >= main.length - 1) {
+      i = 0;
+    } else {
+      i++;
+    }
+
+    promoWrapper.style.backgroundImage = "url(".concat(selector[i], ")");
+  }
+}
+
+/***/ }),
+
 /***/ "./src/js/modules/reviewSlider.js":
 /*!****************************************!*\
   !*** ./src/js/modules/reviewSlider.js ***!
@@ -286,10 +323,12 @@ function zoomIn() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
-/* harmony import */ var _modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/zoomIn */ "./src/js/modules/zoomIn.js");
-/* harmony import */ var _modules_aboutSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/aboutSlider */ "./src/js/modules/aboutSlider.js");
-/* harmony import */ var _modules_reviewSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/reviewSlider */ "./src/js/modules/reviewSlider.js");
+/* harmony import */ var _modules_promo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/promo */ "./src/js/modules/promo.js");
+/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
+/* harmony import */ var _modules_zoomIn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/zoomIn */ "./src/js/modules/zoomIn.js");
+/* harmony import */ var _modules_aboutSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/aboutSlider */ "./src/js/modules/aboutSlider.js");
+/* harmony import */ var _modules_reviewSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/reviewSlider */ "./src/js/modules/reviewSlider.js");
+
 
 
 
@@ -297,10 +336,11 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener("DOMContentLoaded", () => {
   new WOW().init();
   let rellax = new Rellax('.rellax');
-  Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_zoomIn__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  Object(_modules_aboutSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  Object(_modules_reviewSlider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_zoomIn__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_modules_aboutSlider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_modules_reviewSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  Object(_modules_promo__WEBPACK_IMPORTED_MODULE_0__["default"])();
   window.addEventListener("resize", () => {
     try {
       if (window.innerWidth < 993) {
