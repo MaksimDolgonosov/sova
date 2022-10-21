@@ -5,10 +5,16 @@ export default function promo() {
     let i = 0;
 
     if (window.innerWidth < 769) {
-        promoWrapper.style.backgroundImage = `url(${mainMobile[0]})`;
+        try {
+            promoWrapper.style.backgroundImage = `url(${mainMobile[0]})`;
+        } catch (e) { }
+
         setInterval(() => changePromoWrapper(mainMobile), 14000);
     } else {
-        promoWrapper.style.backgroundImage = `url(${main[0]})`;
+        try {
+            promoWrapper.style.backgroundImage = `url(${main[0]})`;
+        } catch (e) { }
+
         setInterval(() => changePromoWrapper(main), 12000);
     }
 
@@ -18,7 +24,10 @@ export default function promo() {
         } else {
             i++;
         }
-        promoWrapper.style.backgroundImage = `url(${selector[i]})`;
+        try {
+            promoWrapper.style.backgroundImage = `url(${selector[i]})`;
+        }catch(e){}
+        
     }
 
 }
