@@ -1,7 +1,7 @@
 export default function promo() {
     const promoWrapper = document.querySelector(".promo");
-    const main = ["../img/interier/main1.jpg", "../img/interier/main2Cut.jpg"];
-    const mainMobile = ["../img/interier/cups.jpg", "../img/interier/main-mobile.jpg"];
+    const main = ["img/interier/main1.jpg", "img/interier/main2Cut.jpg"];
+    const mainMobile = ["img/interier/cups.jpg", "img/interier/main-mobile.jpg"];
     let i = 0;
 
     if (window.innerWidth < 769) {
@@ -26,8 +26,8 @@ export default function promo() {
         }
         try {
             promoWrapper.style.backgroundImage = `url(${selector[i]})`;
-        }catch(e){}
-        
+        } catch (e) { }
+
     }
 
 }
